@@ -1,122 +1,94 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CardioThoraxia – Support</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f7;
-      color: #1d1d1f;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.25em;
-    }
-    h2 {
-      margin-top: 2em;
-      font-size: 1.25rem;
-    }
-    p {
-      margin: 0.75em 0;
-    }
-    a {
-      color: #007aff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      margin-top: 3em;
-      font-size: 0.9rem;
-      color: #6e6e73;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-top: 1.5em;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support — CardioThoraxia</title>
+  <meta name="description" content="Support and contact information for CardioThoraxia." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+
 <body>
-  <div class="container">
-    <h1>CardioThoraxia Support</h1>
-    <p><strong>Build precise cardiothoracic literature searches.</strong></p>
 
-    <div class="card">
-      <h2>What is CardioThoraxia?</h2>
-      <p>
-        CardioThoraxia is a professional literature search tool designed for
-        cardiothoracic surgeons, trainees, and researchers. It provides a
-        guided, topic-based interface for building precise PubMed searches
-        without requiring manual query syntax.
-      </p>
-      <p>
-        The app retrieves publicly available bibliographic data from
-        <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>.
-      </p>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-mark">CT</div>
+      <div class="brand-text">
+        <div class="brand-name">CardioThoraxia</div>
+        <div class="brand-subtitle">Precision literature search</div>
+      </div>
     </div>
+    <nav class="nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/privacypolicy/" class="nav-link">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="card">
-      <h2>Using the App</h2>
-      <ul>
-        <li>Add one or more topics to define the focus of your search</li>
-        <li>Choose whether all topics must match (AND) or any topic may match (OR)</li>
-        <li>Optionally refine your search using Advanced Search</li>
-        <li>View article abstracts and open results directly in PubMed</li>
-      </ul>
+<main class="section">
+  <div class="container" style="max-width: 820px;">
+    <h1>Support</h1>
+    <p class="section-lead">
+      Need help or have suggestions for improvement?
+    </p>
+
+    <h2>General Support</h2>
+    <p>
+      For questions, technical issues, or feedback, please contact:
+    </p>
+
+    <p>
+      📧 <strong>Email:</strong> support@cardiothoraxia.com
+    </p>
+
+    <h2>Common Questions</h2>
+
+    <h3>Does AI Insight read full-text articles?</h3>
+    <p>
+      No. AI Insight uses PubMed abstract text and metadata only.
+      It does not access subscription-based or full-text content.
+    </p>
+
+    <h3>Can I edit the PubMed query directly?</h3>
+    <p>
+      Yes. Advanced Search allows manual editing of query strings and PubMed tags.
+    </p>
+
+    <h3>How do I suggest a new topic?</h3>
+    <p>
+      Within the app, tap the lightbulb icon in the topic selection screen to submit a suggestion.
+      Approved updates are incorporated automatically in future app updates.
+    </p>
+
+    <h3>Is patient data stored?</h3>
+    <p>
+      No. CardioThoraxia does not collect or store patient information.
+    </p>
+
+    <h2>App Version</h2>
+    <p>
+      Please include your app version number when reporting issues.
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">CardioThoraxia</div>
+      <div class="footer-note">© <span id="year"></span> CardioThoraxia. All rights reserved.</div>
     </div>
-
-    <div class="card">
-      <h2>Medical Disclaimer</h2>
-      <p>
-        CardioThoraxia is an informational tool only. It does not provide medical
-        advice, diagnoses, or treatment recommendations. Clinical decisions
-        should always be made using professional judgment and authoritative
-        sources.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Privacy</h2>
-      <p>
-        CardioThoraxia does not collect personal data, require user accounts,
-        or track users. Searches are performed directly against PubMed using
-        publicly available APIs.
-      </p>
-      <p>
-        View the full <a href="../privacypolicy/" target="_blank">Privacy Policy</a>.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Support & Contact</h2>
-      <p>
-        If you encounter a bug, have a feature suggestion, or need assistance,
-        please contact:
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:support@cardiothoraxia.com">support@cardiothoraxia.com</a>
-      </p>
-    </div>
-
-    <div class="footer">
-      © 2026 CardioThoraxia. All rights reserved.
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/privacypolicy/">Privacy Policy</a>
     </div>
   </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
