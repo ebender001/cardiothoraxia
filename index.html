@@ -1,71 +1,276 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>CardioThoraxia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 760px;
-      margin: 80px auto;
-      padding: 24px;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin-top: 3rem;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 14px 20px;
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .footer a {
-      margin-right: 16px;
-      color: #666;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CardioThoraxia — Precision literature search for cardiothoracic surgery</title>
+    <meta
+      name="description"
+      content="CardioThoraxia helps clinicians build precise PubMed searches using guided cardiothoracic topics, MeSH, and structured AI insights."
+    />
 
-  <h1>CardioThoraxia</h1>
-  <p><strong>Structured AI analysis of cardiothoracic literature.</strong></p>
+    <!-- Social preview (optional) -->
+    <meta property="og:title" content="CardioThoraxia" />
+    <meta property="og:description" content="Precision literature search for cardiothoracic surgery." />
+    <meta property="og:type" content="website" />
 
-  <p>
-    CardioThoraxia provides evidence-anchored summaries of PubMed abstracts,
-    designed to support surgical review, conference preparation, and clinical decision framing.
-  </p>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/favicon.png" />
+  </head>
 
-  <a class="button" href="#">Download on the App Store</a>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <h2>How It Works</h2>
-  <ul>
-    <li>Abstract-only structured analysis</li>
-    <li>Explicit study design and population identification</li>
-    <li>Limitations surfaced</li>
-    <li>Practice relevance assessment with confidence rating</li>
-  </ul>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">CT</div>
+          <div class="brand-text">
+            <div class="brand-name">CardioThoraxia</div>
+            <div class="brand-subtitle">Precision literature search</div>
+          </div>
+        </div>
 
-  <div class="footer">
-    <a href="/privacypolicy/">Privacy Policy</a>
-    <a href="/support/">Support</a>
-  </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#screenshots" class="nav-link">Screenshots</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a class="nav-cta" href="#download">Get the app</a>
+        </nav>
+      </div>
+    </header>
 
-</body>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Designed for cardiothoracic clinicians</p>
+            <h1>Guided PubMed search, built the way surgeons think.</h1>
+            <p class="lead">
+              Build accurate PubMed queries with curated cardiothoracic topics and optional advanced syntax—then add
+              structured AI interpretation to move from abstract to insight faster.
+            </p>
+
+            <div class="hero-actions" id="download">
+              <!-- Replace with your real App Store link when live -->
+              <a class="button primary" href="https://apps.apple.com/" target="_blank" rel="noopener">
+                Download on the App Store
+              </a>
+              <a class="button secondary" href="#screenshots">View screenshots</a>
+            </div>
+
+            <ul class="hero-bullets">
+              <li>Curated cardiothoracic taxonomy (cardiac, thoracic, congenital, transplant, aortic, vascular)</li>
+              <li>Combine topics with AND/OR logic and emphasize a primary topic</li>
+              <li>Advanced Search for MeSH tags, filters, and direct query editing</li>
+              <li>AI Insight summarizes abstracts using PubMed metadata + abstract only</li>
+            </ul>
+
+            <p class="fineprint">
+              AI Insight is generated from PubMed abstract + metadata only (no full text). Always verify against the full
+              article before changing practice.
+            </p>
+          </div>
+
+          <div class="hero-media" aria-label="App preview posters">
+            <div class="poster-stack">
+              <img
+                class="poster poster-1"
+                src="assets/images/hero-precision-search.png"
+                alt="CardioThoraxia guided topic-based search screen"
+                loading="eager"
+              />
+              <img
+                class="poster poster-2"
+                src="assets/images/hero-ai-insights.png"
+                alt="AI Insight screen summarizing PubMed abstracts"
+                loading="lazy"
+              />
+              <img
+                class="poster poster-3"
+                src="assets/images/hero-mesh-queries.png"
+                alt="Advanced Search for building PubMed MeSH queries"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature cards -->
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Capabilities</h2>
+          <p class="section-lead">
+            CardioThoraxia reduces time spent managing search syntax—and increases time spent reading what matters.
+          </p>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Topic-based search construction</h3>
+              <p>
+                Start with curated cardiothoracic topics and build robust searches without manually writing complex query
+                strings.
+              </p>
+              <ul>
+                <li>Match “All topics” (AND) or “Any topic” (OR)</li>
+                <li>Emphasize a primary topic to focus results</li>
+                <li>Optional refinements as needed</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Advanced PubMed control</h3>
+              <p>
+                For power users, Advanced Search supports direct editing of the underlying PubMed query and common tags.
+              </p>
+              <ul>
+                <li>MeSH Terms, [tiab], [pt], [jour], [au]</li>
+                <li>Date ranges and parentheses</li>
+                <li>Precision narrowing when needed</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>AI Insight for abstracts</h3>
+              <p>
+                Structured AI interpretation provides takeaways, study snapshot, outcomes, limitations, and practice
+                implications—based only on the abstract + metadata.
+              </p>
+              <ul>
+                <li>Conservative, abstract-bound summaries</li>
+                <li>Clear “should this change practice?” framing</li>
+                <li>Designed for rapid literature review</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section id="screenshots" class="section alt">
+        <div class="container">
+          <h2>Screenshots</h2>
+          <p class="section-lead">A quick look at guided search, MeSH query building, and AI Insight.</p>
+
+          <div class="gallery">
+            <figure class="shot">
+              <img
+                src="assets/images/hero-precision-search.png"
+                alt="Precision Search for cardiothoracic surgery poster"
+                loading="lazy"
+              />
+              <figcaption>Guided, topic-based PubMed searches</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <img
+                src="assets/images/hero-ai-insights.png"
+                alt="Understand Abstracts Faster poster"
+                loading="lazy"
+              />
+              <figcaption>Structured AI interpretation of abstracts</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <img
+                src="assets/images/hero-mesh-queries.png"
+                alt="Create PubMed MeSH Queries poster"
+                loading="lazy"
+              />
+              <figcaption>Advanced Search with MeSH + PubMed tags</figcaption>
+            </figure>
+          </div>
+
+          <div class="callout">
+            <div class="callout-body">
+              <h3>Built for trainees and experienced surgeons</h3>
+              <p>
+                Beginners can rely on curated topics. Power users can refine queries directly—without leaving the app.
+              </p>
+            </div>
+            <a class="button primary" href="https://apps.apple.com/" target="_blank" rel="noopener">Get the app</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <h2>FAQ</h2>
+
+          <div class="faq">
+            <details>
+              <summary>Does AI Insight read the full paper?</summary>
+              <p>
+                No. AI Insight uses PubMed abstract + metadata only (no full text). If details are not present in the
+                abstract, the insight should indicate they are not reported.
+              </p>
+            </details>
+
+            <details>
+              <summary>Can I edit the PubMed query directly?</summary>
+              <p>
+                Yes. Advanced Search supports editing the underlying query, adding clauses, and using common PubMed tags
+                (e.g., [tiab], [pt], [jour], [au]) and date ranges.
+              </p>
+            </details>
+
+            <details>
+              <summary>Is this a general medical search tool?</summary>
+              <p>
+                CardioThoraxia is tailored to cardiothoracic surgery workflows with a curated taxonomy organized by
+                clinical practice area.
+              </p>
+            </details>
+
+            <details>
+              <summary>Where can I get help or suggest improvements?</summary>
+              <p>
+                Use the Support link in the footer. The app also supports submitting topic suggestions to improve the
+                catalog over time.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="section cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>Start searching smarter.</h2>
+            <p class="section-lead">Precision PubMed search and structured abstract interpretation for cardiothoracic surgery.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button primary" href="https://apps.apple.com/" target="_blank" rel="noopener">
+              Download on the App Store
+            </a>
+            <a class="button secondary" href="support.html">Support</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">CardioThoraxia</div>
+          <div class="footer-note">© <span id="year"></span> CardioThoraxia. All rights reserved.</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
